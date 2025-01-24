@@ -1,7 +1,7 @@
 import { QuestionServiceClient } from "./question_grpc_web_pb"
 import { SearchRequest } from "./question_pb"
 
-const client = new QuestionServiceClient("http://localhost:8082", null, null)
+const client = new QuestionServiceClient("https://queryquest-t29h.onrender.com", null, null)
 
 export const fetchSuggestions = (query) => {
   return new Promise((resolve, reject) => {
